@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MALICAFE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  
+</head>
+<body>
+<section="1">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/MaliCafé (1).png">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="active">HOME</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">REGISTER</a></li>
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">MY CART</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+
+<section="2">
+  <div class="fixed">
+  </div>
+</section>
+
+
+
+
+<section="3">
+  <div id="home">
+    <div class="landing-text">
+      <h1>MALICAFE</h1>
+      <a href="#" class="btn btn-default btn-lg">MENU</a>
+    </div>
+  </div>
+</section>
+
+<section="4">
+  <div class="padding">
+    <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h4>OUR STALL'S MENU</h4>
+          </div>
+        </section>
+
+          <section="5">
+          <div id="owl-demo" class="owl-carousel">
+              <a class="item"><img src="img/ayam penyet.jpg" alt=""></a>
+              <a class="item"><img src="img/kolomee.jpg" alt=""></a>
+              <a class="item"><img src="img/laksa.jpg" alt=""></a>
+              <a class="item"><img src="img/lobak.JPG" alt=""></a>
+              <a class="item"><img src="img/MEE JAWA.jpg" alt=""></a>
+              <a class="item"><img src="img/meegorengayam.jpg" alt=""></a>
+              <a class="item"><img src="img/nasi ayam.jpg" alt=""></a>
+              <a class="item"><img src="img/RotiCanai.jpg" alt=""></a>
+          </div>
+        </section>
+
+        <div class="padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>OUR SELECTION OF HALAL FOOD</h4>
+                <p>CALORIES</p>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <img src="img/RotiCanai.jpg" class="img-responsive">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>OUR SELECTION OF NON-HALAL FOOD</h4>
+                <p>CALORIES</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="img/kolomee.jpg" class="img-responsive">
+        </div>
+
+        <section>
+  <div class="padding">
+    <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h4>HOW TO ORDER</h4>
+          </div>
+        </section>
+        
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="static/js/index.js"></script>
+<script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>      
+<script>  
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:4,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true
+    });
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
+    })
+    $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    });
+    </script>
+</body>
+</html>
