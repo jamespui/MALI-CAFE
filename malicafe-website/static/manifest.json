@@ -1,6 +1,6 @@
 {
-    "name": "start-node",
-    "short_name": "start-node",
+    "name": "Malicafe",
+    "short_name": "Malicafe",
     "icons": [{
         "src": "static/favicon/favicon.png",
         "sizes": "441x441",
