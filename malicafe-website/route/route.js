@@ -3,7 +3,7 @@ const app = new express.Router();
 
 // Serve link example (http://localhost:3000/__)
 app.get('/', function(req, res) {
-    res.render('index', {title: 'Malicafe', message: 'Hello there!'});
+    res.render('home', {title: 'Malicafe', message: 'Hello there!'});
 });
 
 app.get('/signup', function(req, res) {
