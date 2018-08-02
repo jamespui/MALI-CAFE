@@ -1,0 +1,88 @@
+doctype html
+html(lang='en')
+    head
+        title Bootstrap Example
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    body
+
+        // ---- Include the above in your HEAD tag --------
+        link(href='http://cdn.phpoll.com/css/animate.css', rel='stylesheet')
+        nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+            .container-fluid
+                .navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='') Project Name
+                #navbar.collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li.active
+                            a(href='') Home
+                        li
+                            a(href='') About
+                    ul.nav.navbar-nav.navbar-right
+                        li.dropdown
+                            a.dropdown-toggle(href='http://phpoll.com/register', data-toggle='dropdown')
+                                | Register
+                                span.caret
+                            ul.dropdown-menu.dropdown-lr.animated.flipInX(role='menu')
+                                .col-lg-12
+                                    .text-center
+                                        h3
+                                            b Register
+                                    form#ajax-register-form(action='http://phpoll.com/register/process', method='post', role='form', autocomplete='off')
+                                        .form-group
+                                            input#username.form-control(type='text', name='username', tabindex='1', placeholder='Username', value='')
+                                        .form-group
+                                            input#email.form-control(type='email', name='email', tabindex='1', placeholder='Email Address', value='')
+                                        .form-group
+                                            input#password.form-control(type='password', name='password', tabindex='2', placeholder='Password')
+                                        .form-group
+                                            input#confirm-password.form-control(type='password', name='confirm-password', tabindex='2', placeholder='Confirm Password')
+                                        .form-group
+                                            .row
+                                                .col-xs-6.col-xs-offset-3
+                                                    input#register-submit.form-control.btn.btn-info(type='submit', name='register-submit', tabindex='4', value='Register Now')
+                                        input#token.hide(type='hidden', name='token', value='7c6f19960d63f53fcd05c3e0cbc434c0')
+                        li.dropdown
+                            a.dropdown-toggle(href='http://phpoll.com/login', data-toggle='dropdown')
+                                | Log In
+                                span.caret
+                            ul.dropdown-menu.dropdown-lr.animated.slideInRight(role='menu')
+                                .col-lg-12
+                                    .text-center
+                                        h3
+                                            b Log In
+                                    form#ajax-login-form(action='http://phpoll.com/login/process', method='post', role='form', autocomplete='off')
+                                        .form-group
+                                            label(for='username') Username
+                                            input#username.form-control(type='text', name='username', tabindex='1', placeholder='Username', value='', autocomplete='off')
+                                        .form-group
+                                            label(for='password') Password
+                                            input#password.form-control(type='password', name='password', tabindex='2', placeholder='Password', autocomplete='off')
+                                        .form-group
+                                            .row
+                                                .col-xs-7
+                                                    input#remember(type='checkbox', tabindex='3', name='remember')
+                                                    label(for='remember')  Remember Me
+                                                .col-xs-5.pull-right
+                                                    input#login-submit.form-control.btn.btn-success(type='submit', name='login-submit', tabindex='4', value='Log In')
+                                        .form-group
+                                            .row
+                                                .col-lg-12
+                                                    .text-center
+                                                        a.forgot-password(href='http://phpoll.com/recover', tabindex='5') Forgot Password?
+                                        input#token.hide(type='hidden', name='token', value='a465a2791ae0bae853cf4bf485dbe1b6')
+        .container
+            .row
+                .col-xs-12.text-center
+                    | Be sure to include
+                    a(href='http://daneden.github.io/animate.css/', target='_blank', title='animate.css') animate.css
+                    |  for the animations
+
