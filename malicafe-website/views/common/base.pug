@@ -10,6 +10,7 @@ html
         title #{title}
         link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script' )
         link(rel='stylesheet', href='../static/vendor/css/bootstrap.min.css')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
         //link(rel='stylesheet' href="../static/resto/css/styles-merged.css")
         //link(rel='stylesheet' href='../static/resto/style.min.css')
         link(rel='manifest' href='../static/manifest.json')
@@ -42,7 +43,7 @@ html
         .containre.my-5
             .text-center
                 a(href="/")
-                    img.img-fluid(src='../static/images/logo.png')
+                    img.img-fluid.animated.bounce.infinite(src='../static/images/logo.png')
                 ul.nav.justify-content-center.text-uppercase
                     li.nav-item
                         a.nav-link.active(href='#') Menu
