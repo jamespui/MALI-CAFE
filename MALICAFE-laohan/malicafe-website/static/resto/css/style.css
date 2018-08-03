@@ -5,6 +5,25 @@
  * Author URL: https://probootstrap.com
  * License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
  */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
+/* Fixed navbar */
+body {
+padding-top: 90px;
+}
+/* General sizing */
+ul.dropdown-lr {
+width: 300px;
+}
+/* mobile fix */
+@media (max-width: 768px) {
+  .dropdown-lr h3 {
+  color: #eee;
+  }
+  .dropdown-lr label {
+  color: #eee;
+  }
+  }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?1z9v6x");
@@ -302,7 +321,7 @@ a:hover, a:focus, a:active {
   padding-bottom: 0 !important;
   font-size: 30px;
   text-transform: uppercase;
-  background: url(../img/logo.png) no-repeat left top;
+  background: url(../img/logomalicafe.png) no-repeat left top;
   top: 40px;
   position: relative;
   width: 117px;
@@ -330,7 +349,7 @@ a:hover, a:focus, a:active {
     position: relative;
     width: 117px;
     height: 40px;
-    background: url(../img/logo@2x.png) no-repeat left 100%;
+    background: url(../img/logomalicafe.png) no-repeat left 100%;
     background-size: cover;
   }
 }

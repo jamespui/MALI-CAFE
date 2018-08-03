@@ -34,11 +34,16 @@ html(lang='en')
                         li
                             a(href='#', data-nav-section='reservation') location
                         li
-                            a(href='#', data-nav-section='events') register
+                            a(href='#', data-nav-section='events') how to order
                         li
-                            a(href='#', data-nav-section='contact') mycart
-                        li
-                            button.btn.btn-primary(type='submit') Login
+                            a(href='#', data-nav-section='contact') contact
+                        li.dropdown
+                                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                                    b Register
+                        li.dropdown
+                            a.dropdown-toggle(href='#', data-toggle='dropdown')
+                                b Login
+
 
         section.flexslider(data-section='welcome')
             ul.slides
@@ -147,7 +152,7 @@ html(lang='en')
                 .row
                     .col-md-12.text-center.probootstrap-animate
                         .probootstrap-heading
-                            h2.primary-heading Discover
+                            h2.primary-heading <Yummy></Yummy>
                             h3.secondary-heading Our Menu
         section.probootstrap-section.probootstrap-bg-white
             .container
@@ -247,8 +252,8 @@ html(lang='en')
                 .row
                     .col-md-12.text-center.probootstrap-animate
                         .probootstrap-heading
-                            h2.primary-heading Register
-                            h3.secondary-heading online order
+                            h2.primary-heading Make Order
+                            h3.secondary-heading how to order
                 section.probootstrap-section
                     .container
                         .row
