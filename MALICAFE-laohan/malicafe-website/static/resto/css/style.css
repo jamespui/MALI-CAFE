@@ -6,6 +6,29 @@
  * License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
  */
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
+
+/*需要再放这个吗 ？？？？ */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.js');
+
+/*ANIMATE REGISTER AND LOGIN CSS HERE*/
+/* Fixed navbar */
+| body {
+| padding-top: 90px;
+| }
+/* General sizing */
+| ul.dropdown-lr {
+| width: 300px;
+| }
+/* mobile fix */
+@media (max-width: 768px) {
+  .dropdown-lr h3 {
+  | color: #eee;
+  | }
+  .dropdown-lr label {
+  | color: #eee;
+  | }
+  }
+
 /* Fixed navbar */
 body {
 padding-top: 90px;
@@ -1951,7 +1974,7 @@ section[data-section="menu"] {
 
 .flexslider .slides > li {
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 
 .flexslider .slides > li.overlay:before {

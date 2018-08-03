@@ -18,8 +18,8 @@ app.get('/signin', function(req, res) {
     res.render('account/signin', {title: 'Welcome to start-node', message: 'Hello there!'});
 });
 
-app.get('/testing', function(req, res) {
-    res.render('account/testing', {title: 'Welcome to start-node', message: 'Hello there!'});
+app.get('/testanimate', function(req, res) {
+    res.render('account/testanimate', {title: 'Welcome to start-node', message: 'Hello there!'});
 });
 
 module.exports = app;
