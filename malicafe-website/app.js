@@ -1,9 +1,43 @@
 const express = require('express');
 const favicon = require('serve-favicon');
 const path = require('path');
-const routing = require('./route/route')
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const mongoose = require('mongoose');
+
+const routing = require('./routes/route');
+
+// Connect to Database
+mongoose.connect('mongodb://root:password@localhost/malicafeDB?authSource=admin');
+let db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+    // we're connected!
+    console.log('Malicafe Database is Connected');
+});
+
+// const Schema = mongoose.Schema;
+//
+// const dataText = new Schema({
+//     content: String,
+//     user: {
+//         userName: String,
+//         avatarUrl: String
+//     }
+// }, {
+//     timestamps: true
+// });
+//
+// const chatData = mongoose.model('chat', dataText);
+//
+// let saveText = new chatData({
+//     content: 'Hello',
+//     user: {
+//         userName: 'laohan',
+//     }
+// });
+// saveText.save();
+
 
 const app = express();
 
